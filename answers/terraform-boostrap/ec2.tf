@@ -17,7 +17,6 @@ data "aws_ami" "amazon_linux_ec2" {
   }
 }
 
-
 data "template_file" "user_data" {
   template = "${file("${path.module}/template/user-data.tpl")}"
 }
